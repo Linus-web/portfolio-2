@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    overflow-x: hidden;
+}
+
+
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about{
+    background-color: #dedede;
+}
+
+.projects{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2);
+    
+    
+    
+}
+
+.card{
+    border: solid white 2px;
+    margin: 2rem;
+}
+
+.card:hover{
+    scale: 1.1;
+}
+
+.contact{
+    background-color: gray;
+}
+.footer{
+    background-color: #dedede;
+}
