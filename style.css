@@ -88,21 +88,86 @@ select {
 
 body{
   width: 100vw;
-  height: 5000px;
 }
 
-main
 
+
+
+
+@media (min-width:601px) {
+  
+  #nav-checkbox,
+  .hamburger-button{
+    display: none;
+  }
+  
+  .nav-bar{
+    display: flex;
+    background: var(--bg);
+    height: 3rem;
+    color: white;
+    gap: 2rem;
+  }
+
+
+
+}
+
+
+.start{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--bg);
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  padding: 4rem;
+}
+
+.about-me{
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--second-bg);
+  padding: 4rem;
+  gap:3rem;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.contact-me{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--second-bg);
+  padding: 4rem;
+  gap: 3rem;
+}
+
+
+@media (max-width:600px) {
+  
 .nav-bar{
+
   position:fixed;
   background: var(--bg-grey);
   color: white;
   height: fit-content;
   width: 17rem;
-  padding:4rem 2.5rem;
+  padding:7rem 2.5rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 6rem;
 
 }
 
@@ -122,8 +187,6 @@ main
   border: 1px solid var(--primary) ;
 } 
 
-
-
 #nav-checkbox{
   display: none;
   z-index: 10;
@@ -137,8 +200,8 @@ main
 .hamburger-button{
   z-index: 11;
   position: fixed;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   right: 10px;
   top: 10px;
 }
@@ -146,12 +209,16 @@ main
 .hamburger{
   z-index: 2;
   position: fixed;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   right: 10px;
   top: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: all linear 0ms 200ms;
+  background: var(--bg);
+  border-radius: 0.4rem;
 }
 
 .hamburger-parts,
@@ -159,9 +226,9 @@ main
 .hamburger-parts::after {
   display: block;
   position: absolute;
-  width: 90%;
+  width: 60%;
   height: 3px;
-  background-color: var(--second-bg);
+  background: var(--second-bg);
   transition: ease-out 333ms;
 }
 .hamburger-parts::before{
@@ -193,6 +260,12 @@ main
   transform: rotate(225deg);
 }
 
+#nav-checkbox:checked ~ .hamburger {
+  transition: all linear 0ms 100ms;
+background: var(--bg-grey);
+}
+
+
 #nav-checkbox ~ *   .nav-bar{
   position: fixed;
   right: -18rem;
@@ -202,6 +275,150 @@ main
 #nav-checkbox:checked ~ *   .nav-bar{
   right: 0;
   transition: all ease-in-out 333ms;
+}
+
+}
+
+
+@media (max-width:600px) {
+  
+  .start h1{
+    margin-top: 35%;
+    font-size: 3.5rem;
+  }
+  
+  .start h2{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .start h3{
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+  .start button{
+    width: fit-content;
+    background:var(--primary);
+    border: none;
+    color: var(--bg);
+    font-weight: 500;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width:600px) {
+  
+  .about-me h1{
+    margin-top: 35%;
+    font-size: 3.5rem;
+  }
+    
+  .about-me h3{
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+ 
+}
+
+
+
+
+@media (max-width:600px){
+
+  .projects h1{
+    font-size: 3.5rem;
+    color: white;
+  }
+  .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .card{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    background-color: #03E895;
+    display: flex;
+  }
+
+  .card h1{
+    z-index: 1;
+    width: 60%;
+    font-size: 1.75rem;
+    margin: 1rem;
+    align-self: flex-end;
+  }
+
+  .card svg{
+    height: 26px;
+  }
+
+  .svgs {
+    position: absolute;
+    justify-content: end;
+    display: flex;
+    gap: 1rem;
+    bottom: 5%;
+    right: 5%;
+    width: 50%;
+  }
+
+
+}
+
+@media (max-width:600px) {
+  .contact-me h1{
+    font-size: 3.5rem;
+  }
+
+  .contact-me #name,
+  #email,#subject,textarea{
+    border: none;
+    background-color: var(--bg);
+    color: var(--second-bg);
+    width: 100%;
+    height: 3rem;
+    text-indent: 1rem;
+    
+  }
+
+  .contact-me > form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.125rem;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .contact-me > form > textarea{
+    height: 20rem;
+    padding-top: 1rem;
+  }
+
+  .contact-me > form > button{
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--primary);
+    font-weight: 500;
+    padding: 0.6rem;
+  }
+
 }
 
 
