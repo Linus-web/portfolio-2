@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -73,29 +73,22 @@ select {
   }
 }
 
-:root{
+:root {
   --bg: #212427;
   --bg-grey: #303841;
-  --second-bg: #DEDEDE;
-  --primary: #03E895;
-
+  --second-bg: #dedede;
+  --primary: #03e895;
 }
 
-
-*{
-  font-family: 'Montserrat', sans-serif;
-
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
   width: 100%;
 }
 
-
-
-
-
-.start{
+.start {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -105,20 +98,18 @@ body{
   color: white;
   padding: 4rem;
   min-height: 100vh;
-
-
 }
 
-.about-me{
+.about-me {
   display: flex;
   flex-direction: column;
   background: var(--second-bg);
   min-height: 55rem;
   padding: 4rem;
-  gap:3rem;
+  gap: 3rem;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-direction: column;
   background: var(--bg);
@@ -126,7 +117,7 @@ body{
   gap: 3rem;
 }
 
-.contact-me{
+.contact-me {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -135,167 +126,158 @@ body{
   gap: 3rem;
 }
 
-@media (min-width:1200px) {
-  .start{
+@media (min-width: 1200px) {
+  .start {
     padding: 8rem 14rem 14rem 14rem;
   }
-  .about-me{
+  .about-me {
     padding: 14rem;
   }
-  .projects{
+  .projects {
     padding: 14rem;
   }
-  .contact-me{
+  .contact-me {
     padding: 14rem 14rem 4rem 14rem;
   }
 }
 
 #nav-checkbox,
-  .hamburger-button{
-    display: none;
-  }
-  
-  .nav-bar{
-    z-index: 5;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    background: var(--bg);
-    width: 100%;
-    height: fit-content;
-    color: white;
-    gap: 2rem;
-    padding: 1rem;
-    padding-right: 5rem;
-    box-shadow: 0 0 30px 8px rgba(29, 29, 29, 0.541);
-  }
-  .nav-bar a{
-    text-decoration: none;
-    color: inherit;
-  }
-  .nav-item{
-    width: fit-content;
-    height: 2.75rem;
-  }
+.hamburger-button {
+  display: none;
+}
 
-.nav-item:hover a >hr{
-  width:7rem;
-  border: 1px solid var(--primary) ;
-} 
+.nav-bar {
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  background: var(--bg);
+  width: 100%;
+  height: fit-content;
+  color: white;
+  gap: 2rem;
+  padding: 1rem;
+  padding-right: 5rem;
+  box-shadow: 0 0 30px 8px rgba(29, 29, 29, 0.541);
+}
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-item {
+  width: fit-content;
+  height: 2.75rem;
+}
 
-.nav-item > a> hr{
+.nav-item:hover a > hr {
+  width: 7rem;
+  border: 1px solid var(--primary);
+}
+
+.nav-item > a > hr {
   position: absolute;
   background-color: var(--primary);
   width: 4rem;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
 }
 
-@media (max-width:1240px) {
-  
-.nav-bar{
- z-index: 10;
-  position:fixed;
-  background: var(--bg-grey);
-  color: white;
-  height: fit-content;
-  width: 17rem;
-  padding:7rem 2.5rem;
-  padding-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-
-}
-
-.nav-item > h1{
-  font-weight: 400;
-}
-
-.hamburger-button{
-  display: block;
-  z-index: 21;
-  position: fixed;
-  width: 3.5rem;
-  height: 3.5rem;
-  right: 10px;
-  top: 10px;
-}
-
-.hamburger{
-  z-index: 20;
-  position: fixed;
-  width: 3.5rem;
-  height: 3.5rem;
-  right: 10px;
-  top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all linear 0ms 200ms;
-  background: var(--bg);
-  border-radius: 0.4rem;
-}
-
-.hamburger-parts,
-.hamburger-parts::before,
-.hamburger-parts::after {
-  display: block;
-  position: absolute;
-  width: 60%;
-  height: 3px;
-  background: var(--second-bg);
-  transition: ease-out 333ms;
-}
-.hamburger-parts::before{
-  content: '';
-  width: 100%;
-  margin-top: -10px;
+@media (max-width: 1240px) {
+  .nav-bar {
+    z-index: 10;
+    position: fixed;
+    background: var(--bg-grey);
+    color: white;
+    height: fit-content;
+    width: 17rem;
+    padding: 7rem 2.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
   }
-.hamburger-parts::after{
-  content: '';
-  width: 100%;
-  margin-top: 10px;
+
+  .nav-item > h1 {
+    font-weight: 400;
+  }
+
+  .hamburger-button {
+    display: block;
+    z-index: 21;
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 10px;
+    top: 10px;
+  }
+
+  .hamburger {
+    z-index: 20;
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 0ms 200ms;
+    background: var(--bg);
+    border-radius: 0.4rem;
+  }
+
+  .hamburger-parts,
+  .hamburger-parts::before,
+  .hamburger-parts::after {
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: var(--second-bg);
+    transition: ease-out 333ms;
+  }
+  .hamburger-parts::before {
+    content: "";
+    width: 100%;
+    margin-top: -10px;
+  }
+  .hamburger-parts::after {
+    content: "";
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #nav-checkbox:checked ~ .hamburger .hamburger-parts {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #nav-checkbox:checked ~ .hamburger .hamburger-parts::before {
+    margin-top: 0;
+    transform: rotate(-225deg);
+  }
+  #nav-checkbox:checked ~ .hamburger .hamburger-parts::after {
+    margin-top: 0;
+    transform: rotate(225deg);
+  }
+
+  #nav-checkbox:checked ~ .hamburger {
+    transition: all linear 0ms 100ms;
+    background: var(--bg-grey);
+  }
+
+  #nav-checkbox ~ * .nav-bar {
+    position: fixed;
+    right: -18rem;
+    transition: all ease-in-out 333ms;
+  }
+
+  #nav-checkbox:checked ~ * .nav-bar {
+    right: 0;
+    transition: all ease-in-out 333ms;
+  }
 }
 
-#nav-checkbox:checked ~ .hamburger .hamburger-parts{
-
- background-color: rgba(255, 255, 255, 0);
-  
-}
-
-#nav-checkbox:checked ~ .hamburger .hamburger-parts::before{
-
-  margin-top: 0;
-  transform: rotate(-225deg);
-  
-}
-#nav-checkbox:checked ~ .hamburger .hamburger-parts::after{
-
-  margin-top: 0;
-  transform: rotate(225deg);
-}
-
-#nav-checkbox:checked ~ .hamburger {
-  transition: all linear 0ms 100ms;
-background: var(--bg-grey);
-}
-
-
-#nav-checkbox ~ *   .nav-bar{
-  position: fixed;
-  right: -18rem;
-  transition: all ease-in-out 333ms;
-}
-
-#nav-checkbox:checked ~ *   .nav-bar{
-  right: 0;
-  transition: all ease-in-out 333ms;
-}
-
-}
-
-.start h1{
+.start h1 {
   margin-top: 8rem;
   width: 100%;
   max-width: 50rem;
@@ -304,60 +286,57 @@ background: var(--bg-grey);
   margin-bottom: 2rem;
 }
 
-.start h2{
+.start h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-.start h3{
+.start h3 {
   font-size: 1.25rem;
   font-weight: 100;
 }
 
-.start button{
+.start button {
   width: fit-content;
-  background:var(--primary);
+  background: var(--primary);
   border: none;
   color: var(--bg);
   font-weight: 500;
   padding: 0.4rem;
   border-radius: 0.5rem;
 }
-@media (max-width:600px) {
-  
-  .start h1{
+@media (max-width: 600px) {
+  .start h1 {
     margin-top: 6rem;
     margin-bottom: unset;
     width: 100%;
     overflow-wrap: break-word;
     font-size: calc(26px + 8vw);
-
   }
-  
 }
 
-.about-me h1{
+.about-me h1 {
   font-size: 3.5rem;
 }
-  
-.about-me h3{
+
+.about-me h3 {
   width: 100%;
   max-width: 50rem;
   font-size: 1.25rem;
   font-weight: 100;
 }
 
-.skills{
+.skills {
   position: relative;
   display: flex;
   height: 20rem;
   width: fit-content;
   border: 2px solid var(--bg);
   padding: 2rem 6rem;
-  margin-top:4rem;
+  margin-top: 4rem;
 }
 
-.mySkills{
+.mySkills {
   position: absolute;
   background-color: #dedede;
   left: 10%;
@@ -365,7 +344,7 @@ background: var(--bg-grey);
   padding: 0 1rem;
 }
 
-.skill{
+.skill {
   height: 100%;
   display: flex;
   width: 50%;
@@ -375,7 +354,7 @@ background: var(--bg-grey);
   font-size: 1.125rem;
 }
 
-.points{
+.points {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -384,150 +363,141 @@ background: var(--bg-grey);
   width: 50%;
 }
 
-@media (min-width:1000px){
-  .skill{
+@media (min-width: 1000px) {
+  .skill {
     width: 100%;
   }
 }
-.points > div{
+.points > div {
   display: flex;
   gap: 3rem;
   align-items: center;
 }
 
-.skill img{
+.skill img {
   height: 20%;
 }
 
-.laravel span:nth-child(1){
-  background-color: #03E895;
-  padding: 0.5rem;
-  border-radius: 50%;
- }
-
- .react span:nth-child(2){
-  background-color: #03E895;
-  padding: 0.5rem;
-  border-radius: 50%;
- }
-
-.tailwindcss span:nth-child(4){
-  background-color: #03E895;
+.laravel span:nth-child(1) {
+  background-color: #03e895;
   padding: 0.5rem;
   border-radius: 50%;
 }
 
+.react span:nth-child(2) {
+  background-color: #03e895;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
 
-@media (max-width:600px) {
+.tailwindcss span:nth-child(4) {
+  background-color: #03e895;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
 
-  
-  
-  .about-me h3{
+@media (max-width: 600px) {
+  .about-me h3 {
     font-size: 1rem;
     font-weight: 100;
   }
- 
 }
 
-
-
-
-.projects h1{
+.projects h1 {
   align-self: flex-start;
-    font-size: 3.5rem ;
-    color: white;
-  }
-  
-.projects{
+  font-size: 3.5rem;
+  color: white;
+}
+
+.projects {
   display: flex;
   justify-content: center;
 }
 
-.projects a{
+.projects a {
   position: absolute;
   z-index: 12;
   height: 100%;
   width: 100%;
 }
 
-.cards{
-  width: calc(350px + 40vw );
+.cards {
+  width: calc(350px + 40vw);
   height: calc(400px + 10vh);
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: 1fr;
-  grid-template-areas: 
-  "a b c" 
-  "d d c";
+  grid-template-areas:
+    "a b c"
+    "d d c";
   gap: 1rem;
 }
 
-.card{
+.card {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
-
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   z-index: 40;
 }
 
-.card:nth-child(1){
+.card:nth-child(1) {
   grid-area: a;
 }
 
-.card:nth-child(2){
+.card:nth-child(2) {
   grid-area: b;
 }
 
-.card:nth-child(3){
+.card:nth-child(3) {
   grid-area: c;
 }
 
-.card:nth-child(4){
+.card:nth-child(4) {
   grid-area: d;
 }
-.card{
+.card {
   position: relative;
   display: flex;
   background: #dedede;
 }
 
-.card:nth-child(1){
+.card:nth-child(1) {
   background-image: url(./images/BCL.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card:nth-child(2){
+.card:nth-child(2) {
   background-image: url(./images/weather.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card:nth-child(3){
+.card:nth-child(3) {
   background-image: url(./images/GFX.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card:nth-child(4){
+.card:nth-child(4) {
   background-image: url(./images/GFX.png);
 }
 
-.opacity{
-position: absolute;
-width: 100%;
-height: 10rem;
-bottom: 0;
-background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
+.opacity {
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
 }
 
-.card h1{
+.card h1 {
   margin: 4%;
   z-index: 1;
   align-self: flex-end;
   font-size: 1.25rem;
 }
 
-.svgs{
+.svgs {
   background-color: var(--bg);
   display: flex;
   position: absolute;
@@ -542,24 +512,18 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
   border-radius: 0.5rem;
 }
 
-.card img{
+.card img {
   height: 1rem;
 }
 
-
-
-
-@media (max-width:800px){
-
-  
-
-  .opacity{
+@media (max-width: 800px) {
+  .opacity {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
   }
-  .cards{
+  .cards {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -567,7 +531,7 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
     width: 100%;
   }
 
-  .card{
+  .card {
     position: relative;
     width: 100%;
     max-width: 400px;
@@ -576,14 +540,12 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
     display: flex;
   }
 
-  .card h1{
+  .card h1 {
     z-index: 1;
     font-size: calc(8px + 4vw);
     margin: 1rem;
     align-self: flex-end;
   }
-
-  
 
   .svgs {
     position: absolute;
@@ -595,24 +557,25 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
   }
 }
 
-.contact-me h1{
+.contact-me h1 {
   font-size: 3.5rem;
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   margin-bottom: 4rem;
 }
 
 .contact-me #name,
-#email,#subject,textarea{
+#email,
+#subject,
+textarea {
   border: none;
   background-color: var(--bg);
   color: var(--second-bg);
   width: 100%;
   height: 3rem;
   text-indent: 1rem;
-  
 }
 
-.contact-me form{
+.contact-me form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -621,12 +584,12 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
   height: 60vh;
 }
 
-.contact-me form > textarea{
+.contact-me form > textarea {
   height: 20rem;
   padding-top: 1rem;
 }
 
-.contact-me form > button{
+.contact-me form > button {
   border: none;
   border-radius: 0.5rem;
   background: var(--primary);
@@ -634,7 +597,7 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
   padding: 0.6rem;
 }
 
-.mediaLinks{
+.mediaLinks {
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -642,28 +605,22 @@ background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,.8));
   gap: 1rem;
 }
 
-.mediaLinks img{
+.mediaLinks img {
   height: 40px;
 }
 
-.mediaLinks > div{
+.mediaLinks > div {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
 }
-.contact-form{
+.contact-form {
   max-width: 50rem;
-  
-  }
-
-@media (max-width:600px) {
-
-  
-
-  .contact-me h1{
-    font-size: calc(16px + 10vw);
-    overflow-wrap:break-word;
-  }
 }
 
-
+@media (max-width: 600px) {
+  .contact-me h1 {
+    font-size: calc(16px + 10vw);
+    overflow-wrap: break-word;
+  }
+}

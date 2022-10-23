@@ -1,14 +1,14 @@
 let x = 1;
 while (x <= 10) {
-  let plane = document.createElement('div');
+  let plane = document.createElement("div");
   plane.className = `plane plane-${x}`;
   plane.style.transform = `rotateY(${x * 5}deg)`;
-  document.querySelector('.sphere-wrapper').appendChild(plane);
+  document.querySelector(".sphere-wrapper").appendChild(plane);
   for (y = 1; y <= 36; y++) {
-    let spoke = document.createElement('div');
+    let spoke = document.createElement("div");
     spoke.className = `spoke spoke-${y}`;
     spoke.innerHTML = ` <div class="dot" style="background-color:${
-      y % 2 === 0 ? '#03E895' : '#212427'
+      y % 2 === 0 ? "#03E895" : "#212427"
     }; animation: pulsate .5s infinite ${aDelay(y)}s alternate both"></div>`;
     spoke.style.transform = `rotateZ(${y}0deg)`;
     document.querySelector(`.plane-${x}`).appendChild(spoke);

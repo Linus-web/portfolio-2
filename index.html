@@ -1,208 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linus Andersson</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="spinningSphere.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-
-    <input type="checkbox" name="nav-checkbox" id="nav-checkbox">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinningSphere.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input type="checkbox" name="nav-checkbox" id="nav-checkbox" />
     <label class="hamburger-button" for="nav-checkbox"></label>
     <div class="hamburger"><div class="hamburger-parts"></div></div>
-   
-        <main>
-            
-            <nav class="nav-bar">
-                <div class="nav-item">
-                    <a href="#about-me">
 
-                        <h1>About me</h1>
-                        <hr>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="#projects">
+    <main>
+      <nav class="nav-bar">
+        <div class="nav-item">
+          <a href="#about-me">
+            <h1>About me</h1>
+            <hr />
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#projects">
+            <h1>Projects</h1>
+            <hr />
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#contact-me">
+            <h1>Contact me</h1>
+            <hr />
+          </a>
+        </div>
+      </nav>
 
-                        <h1>Projects</h1>
-                        <hr>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="#contact-me">
-                        <h1 >Contact me</h1>
-                        <hr>
-                    </a>
-                </div>
-            </nav>
+      <section class="start">
+        <a id="start" href=""></a>
+        <h1>Linus Andersson</h1>
+        <h2>junior web-developer</h2>
+        <h3>
+          I'm a student from sweden who has found a passion in making cool and
+          interactive websites
+        </h3>
 
-            <section class="start">
-                <a id="start" href=""></a>
-                <h1>Linus Andersson</h1>
-                <h2>junior web-developer
+        <button>Download my resume</button>
+      </section>
+      <a id="about-me" href=""></a>
+      <section class="about-me">
+        <div class="main-wrapper">
+          <div class="sphere-wrapper"></div>
+        </div>
+        <h1>About me</h1>
 
-                </h2>
-                <h3>I'm a student from sweden who has found a passion in making cool and interactive websites
-                </h3>
+        <h3>Im a student from Sweden who likes to make cool websites!</h3>
+        <h3>
+          I first touched html,css and js when I started highshcool and thought
+          it was boring and worthless, but over the course of 4 years I have
+          found to like it more and more.
+        </h3>
+        <h3>
+          Im looking forward for what the future has in store, the skills I will
+          learn and the projects I'll have worked on
+        </h3>
 
-                <button>Download my resume</button>
-            </section>
-            <a id="about-me" href=""></a>
-            <section class="about-me">
-               
-                <div class="main-wrapper">
-                    <div class="sphere-wrapper"></div>
-                  </div>
-                <h1>
-                    About me
-                </h1>
+        <div class="skills">
+          <h2 class="mySkills">My Skills</h2>
+          <div class="skill">
+            <img
+              class="laravel"
+              src="/images/laravel-icon.svg"
+              alt="Laravel-icon"
+            />
+            <img
+              class="react"
+              src="/images/react-svgrepo-com.svg"
+              alt="React-icon"
+            />
+            <img
+              class="html/css"
+              src="/images/tailwind-css-icon.svg"
+              alt="Tailwind-icon"
+            />
+          </div>
+          <div class="points">
+            <div class="laravel">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+            <div class="react">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
 
-                <h3>
-                    Im a student from Sweden who likes to 
-                    make cool websites! 
-                </h3>
-                <h3>
-                    I first touched html,css and js when I started highshcool
-                    and thought it was boring and worthless, 
-                    but over the course of 4 years I have found to like it 
-                    more and more.
-                </h3>
-                <h3>
-                    Im looking forward for what the future has in store,
-                    the skills I will learn and the projects I'll have 
-                    worked on  
-                </h3>
+            <div class="tailwindcss">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a id="projects" href=""></a>
+      <section class="projects">
+        <h1>Things I've worked on</h1>
+        <div class="cards">
+          <div class="card">
+            <a href="../BCL/src/html/html.html"> </a>
 
-                <div class="skills">
-                    <h2 class="mySkills">My Skills</h2>
-                    <div class="skill">
-                        <img class="laravel" src="/images/laravel-icon.svg" alt="Laravel-icon">
-                        <img class="react" src="/images/react-svgrepo-com.svg" alt="React-icon">
-                        <img class="html/css" src="/images/tailwind-css-icon.svg" alt="Tailwind-icon">
-                    </div>
-                        <div class="points">
-                            <div class="laravel">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                            </div>
-                            <div class="react">
-                                
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                            </div>
-                            
-                            <div class="tailwindcss">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                            </div>
-                        </div>
-                </div>
-                    
-            </section>
-            <a id="projects" href=""></a>
-            <section class="projects">
-                
-                    <h1>
-                        Things I've worked on
-                    </h1>
-                    <div class="cards">
+            <div class="opacity"></div>
 
-                            <div class="card">
-                            <a href="../BCL/src/html/html.html"> </a>
-                                
-                                    <div class="opacity"></div>
-                                
-                                    <h1>Text-based game</h1>
-                                    <div class="svgs">
-                                        <img src="./images/tailwind-css-icon.svg" alt="Tailwind-icon">
-                                        <img src="./images/typescript-programming-language-icon.svg" alt="Typescript-icon">
-                                </div>
-                            </div>
-                        
-                    <div class="card">
-                        <a href="../Weather_app_public/src/index.html"> </a>
-                        <div class="opacity"></div>
-                        <h1>Weather <br> app</h1>
-                        <div class="svgs">
-                            <img src="images/web-api-icon.svg" alt="Api-icon">
-                            <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon">
-                            <img src="images/javascript-programming-language-icon.svg" alt="Javascript-icon">
-                        </div>
-                    </div>
+            <h1>Text-based game</h1>
+            <div class="svgs">
+              <img src="./images/tailwind-css-icon.svg" alt="Tailwind-icon" />
+              <img
+                src="./images/typescript-programming-language-icon.svg"
+                alt="Typescript-icon"
+              />
+            </div>
+          </div>
 
-                    <div class="card">
-                        <a href="../M3-GFX/src/html/index2.html"> </a>
-                        <div class="opacity"></div>
-                        <h1>GFX <br> emulator</h1>
-                        <div class="svgs">
-                            <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon">
-                            <img src="images/javascript-programming-language-icon.svg" alt="Javascript-icon">
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <a href="../M3-GFX/src/html/index2.html"> </a>
-                        <div class="opacity"></div>
-                        <h1>GFX <br> emulator</h1>
-                        <div class="svgs">
-                            <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon">
-                            <img src="images/javascript-programming-language-icon.svg" alt="Javascript-icon">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <a id="contact-me" href=""></a>
-            <section class="contact-me">
-                <div class="contact-form">
-                    
-                    <h1>Contact me   *WIP*</h1>
-                    
-                    
-                    <form action="email">
-                        
-                        <input type="text" placeholder="Your name*" id="name">
-                        <input type="text" placeholder="Email*" id="email">
-                        <input type="text" placeholder="Subject" id="subject">
-                        <textarea cols="30" rows="10" placeholder="message"></textarea>
-                        <button type="submit">Send mail</button>
-                    </form>
-                    <div class="mediaLinks">
-                        <h2>Follow me!</h2>
-                        <div>
-                            <a href="https://www.instagram.com/and_linus/">
-                                <img src="./images/black-instagram-icon.svg" alt="">
-                            </a>
-                            <a href="https://github.com/Linus-web">
-                                <img src="./images/github-icon.svg" alt="">
-                            </a>
-                            <a href="https://www.linkedin.com/in/linus-andersson-2041a5232/">
-                                <img src="./images/linkedin-app-icon.svg" alt="">
-                            </a>
-                            
-                        </div>
-                        <p>Linus.andersson2@elev.ga.ntig.se</p>
-                    </div>
-                </div>
-            </section>
+          <div class="card">
+            <a href="../Weather_app_public/src/index.html"> </a>
+            <div class="opacity"></div>
+            <h1>
+              Weather <br />
+              app
+            </h1>
+            <div class="svgs">
+              <img src="images/web-api-icon.svg" alt="Api-icon" />
+              <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon" />
+              <img
+                src="images/javascript-programming-language-icon.svg"
+                alt="Javascript-icon"
+              />
+            </div>
+          </div>
 
-        </main>
+          <div class="card">
+            <a href="../M3-GFX/src/html/index2.html"> </a>
+            <div class="opacity"></div>
+            <h1>
+              GFX <br />
+              emulator
+            </h1>
+            <div class="svgs">
+              <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon" />
+              <img
+                src="images/javascript-programming-language-icon.svg"
+                alt="Javascript-icon"
+              />
+            </div>
+          </div>
 
-        <script src="script.js"></script>
-</body>
+          <div class="card">
+            <a href="../M3-GFX/src/html/index2.html"> </a>
+            <div class="opacity"></div>
+            <h1>
+              GFX <br />
+              emulator
+            </h1>
+            <div class="svgs">
+              <img src="images/tailwind-css-icon.svg" alt="Tailwind-icon" />
+              <img
+                src="images/javascript-programming-language-icon.svg"
+                alt="Javascript-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <a id="contact-me" href=""></a>
+      <section class="contact-me">
+        <div class="contact-form">
+          <h1>Contact me *WIP*</h1>
+
+          <form action="email">
+            <input type="text" placeholder="Your name*" id="name" />
+            <input type="text" placeholder="Email*" id="email" />
+            <input type="text" placeholder="Subject" id="subject" />
+            <textarea cols="30" rows="10" placeholder="message"></textarea>
+            <button type="submit">Send mail</button>
+          </form>
+          <div class="mediaLinks">
+            <h2>Follow me!</h2>
+            <div>
+              <a href="https://www.instagram.com/and_linus/">
+                <img src="./images/black-instagram-icon.svg" alt="" />
+              </a>
+              <a href="https://github.com/Linus-web">
+                <img src="./images/github-icon.svg" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/in/linus-andersson-2041a5232/">
+                <img src="./images/linkedin-app-icon.svg" alt="" />
+              </a>
+            </div>
+            <p>Linus.andersson2@elev.ga.ntig.se</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
